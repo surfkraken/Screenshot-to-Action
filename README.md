@@ -15,11 +15,9 @@ Visit [the opening page](index.html) to get the current shortcut. The download l
 - Creates reminders, calendar events, checklist reminders, and Notes; copies or reads text aloud; opens addresses and links; creates contacts; or exports a PDF.
 - Creates ZIP backups and restores validated JSON capture records, skipping records already saved.
 
-The first menu is kept intentionally simple: Choose Photo, Take a Photo, All Captures, Backup and Restore, About and Help, and Quit.
-
 ## Requirements and verification
 
-Requires a compatible iPhone with Apple Intelligence enabled for image analysis. Internet access and Apple's model availability are required for analysis.
+Internet access and Apple's iCloud Pro model availability are required for analysis.
 
 ## Files
 
@@ -27,6 +25,3 @@ Requires a compatible iPhone with Apple Intelligence enabled for image analysis.
 - The source archive contains the generator, test suite, and build documentation.
 - latest.json contains current release metadata for the future update-check workflow.
 
-## Project
-
-Created by [SurfKraken](https://github.com/surfkraken). This repository is the source of truth for releases and future update checks.
