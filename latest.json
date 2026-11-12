@@ -2,6 +2,7 @@
   "product": "Screenshot to Action",
   "version": "2.0",
   "build": 213,
+  "url": "https://www.icloud.com/shortcuts/51fc31bf101d49c08244a8c5a8479b6b",
   "minimum_os": "iOS 27",
   "release_notes": "Adds the first-menu tagline and refreshes the project documentation.",
   "shortcut_file": "Screenshot-to-Action-v2.0-Build-213.shortcut",
