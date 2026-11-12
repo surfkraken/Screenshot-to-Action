@@ -4,10 +4,6 @@ See it. Sort it. Save it.
 
 Screenshot to Action turns a screenshot into useful next steps. Choose a photo or take one, let Apple Intelligence analyze it, then save, search, or act on the details it finds.
 
-## Download
-
-Visit [the opening page](index.html) to get the current shortcut. The download link is loaded from latest.json, so release details stay in one place.
-
 ## What it does
 
 - Extracts visible text, a summary, addresses, and contact details using Apple's Shortcuts Use Model action.
