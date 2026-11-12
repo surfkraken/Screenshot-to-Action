@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09111f">
+  <meta name="description" content="Turn screenshots into useful next steps with Screenshot to Action, an Apple Shortcut by SurfKraken.">
+  <title>Screenshot to Action | SurfKraken</title>
+  <style>
+    :root { color-scheme: dark; --ink:#f5f8ff; --muted:#b8c5d8; --blue:#68a9ff; --line:rgba(255,255,255,.14); }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; color:var(--ink); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:radial-gradient(ellipse at 76% 0%,#203f68 0,transparent 48%),linear-gradient(145deg,#08111f,#101a2a 62%,#111c2e); }
+    main { width:min(1080px,calc(100% - 40px)); margin:auto; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:26px 0; border-bottom:1px solid var(--line); }
+    .brand { color:var(--ink); font-weight:750; letter-spacing:.02em; text-decoration:none; }
+    nav a, footer a { color:var(--muted); text-decoration:none; margin-left:22px; }
+    a:hover { color:white; }
+    .hero { padding:clamp(72px,13vw,150px) 0 94px; max-width:790px; }
+    .eyebrow { color:#9dc9ff; text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; font-weight:700; }
+    h1 { font-size:clamp(3rem,9vw,6.7rem); line-height:.98; letter-spacing:-.065em; margin:20px 0 22px; }
+    .tagline { font-size:clamp(1.2rem,3vw,1.65rem); color:#d5e6ff; margin:0 0 14px; }
+    .intro { font-size:1.1rem; color:var(--muted); max-width:650px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 21px; border-radius:13px; border:1px solid var(--line); color:var(--ink); text-decoration:none; font-weight:700; background:rgba(255,255,255,.06); }
+    .button.primary { background:linear-gradient(135deg,#68a9ff,#3879dc); color:#071326; border-color:transparent; }
+    section { padding:34px 0 70px; }
+    h2 { font-size:1.7rem; letter-spacing:-.03em; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+    article { padding:21px; border:1px solid var(--line); border-radius:17px; background:rgba(255,255,255,.045); }
+    article h3 { margin:0 0 6px; }
+    article p, .note { margin:0; color:var(--muted); }
+    .note { max-width:760px; padding:18px 20px; border-left:3px solid var(--blue); background:rgba(255,255,255,.04); border-radius:0 12px 12px 0; }
+    footer { padding:26px 0 40px; border-top:1px solid var(--line); color:var(--muted); display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+    footer a { margin:0; }
+    @media(max-width:560px) { main { width:min(100% - 28px,1080px); } header { align-items:flex-start; gap:12px; } nav a { margin-left:12px; } .hero { padding-top:82px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./">SURFKRAKEN</a>
+      <nav><a href="#features">Features</a><a href="README.md">README</a></nav>
+    </header>
+    <section class="hero" aria-labelledby="title">
+      <div class="eyebrow">A smarter way to use screenshots</div>
+      <h1 id="title">Screenshot<br>to Action</h1>
+      <p class="tagline">See it. Sort it. Save it.</p>
+      <p class="intro">Turn the information in a screenshot into something useful. Save the capture, find the details, and choose what to do next, all from one Apple Shortcut.</p>
+      <div class="actions">
+        <a class="button primary" href="Screenshot-to-Action-v2.0-Build-213.shortcut">Get the latest shortcut</a>
+        <a class="button" href="Screenshot-to-Action-Test-Report.md">Read the test report</a>
+      </div>
+    </section>
+    <section id="features">
+      <h2>From image to next step</h2>
+      <div class="grid">
+        <article><h3>Capture and understand</h3><p>Extract visible text, a summary, clear addresses, and contact details with Apple's on-device and Private Cloud features.</p></article>
+        <article><h3>Choose what happens next</h3><p>Save to Notes, create reminders or calendar events, open a map or link, make a contact, copy or speak text, or export a PDF.</p></article>
+        <article><h3>Keep a useful archive</h3><p>Browse, rename, edit, back up, and restore captures. Deletion asks for confirmation.</p></article>
+      </div>
+    </section>
+    <section>
+      <p class="note">Requires a compatible iPhone with iOS 27. Apple Intelligence, an internet connection, and available Apple service capacity are needed for image analysis. The shortcut is distributed for signing. Review the README for setup and the test report for verification limits.</p>
+    </section>
+    <footer><span>Created by SurfKraken</span><span><a href="https://github.com/surfkraken">GitHub</a> · <a href="README.md">Project README</a></span></footer>
+  </main>
+</body>
+</html>
