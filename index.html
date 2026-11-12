@@ -23,6 +23,7 @@
     .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
     .button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 21px; border-radius:13px; border:1px solid var(--line); color:var(--ink); text-decoration:none; font-weight:700; background:rgba(255,255,255,.06); }
     .button.primary { background:linear-gradient(135deg,#68a9ff,#3879dc); color:#071326; border-color:transparent; }
+    .button[aria-disabled="true"] { opacity:.65; pointer-events:none; }
     section { padding:34px 0 70px; }
     h2 { font-size:1.7rem; letter-spacing:-.03em; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
@@ -47,7 +48,7 @@
       <p class="tagline">See it. Sort it. Save it.</p>
       <p class="intro">Turn the information in a screenshot into something useful. Save the capture, find the details, and choose what to do next, all from one Apple Shortcut.</p>
       <div class="actions">
-        <a class="button primary" href="Screenshot-to-Action-v2.0-Build-213.shortcut">Get the latest shortcut</a>
+        <a class="button primary" id="download-link" href="#download" aria-disabled="true">Loading shortcut…</a>
         <a class="button" href="Screenshot-to-Action-Test-Report.md">Read the test report</a>
       </div>
     </section>
@@ -60,9 +61,25 @@
       </div>
     </section>
     <section>
-      <p class="note">Requires a compatible iPhone with iOS 27. Apple Intelligence, an internet connection, and available Apple service capacity are needed for image analysis. The shortcut is distributed for signing. Review the README for setup and the test report for verification limits.</p>
+      <p class="note">Requires a compatible iPhone with Apple Intelligence enabled. Internet access and Apple's model availability are required for image analysis. The shortcut is distributed for signing. Review the README for setup and the test report for verification limits.</p>
     </section>
     <footer><span>Created by SurfKraken</span><span><a href="https://github.com/surfkraken">GitHub</a> · <a href="README.md">Project README</a></span></footer>
   </main>
+  <script>
+    (async () => {
+      const link = document.getElementById('download-link');
+      try {
+        const response = await fetch('latest.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Release manifest unavailable');
+        const release = await response.json();
+        if (!release.shortcut_filename) throw new Error('Shortcut path missing');
+        link.href = release.shortcut_filename;
+        link.removeAttribute('aria-disabled');
+        link.textContent = 'Get the latest shortcut';
+      } catch (_) {
+        link.textContent = 'Shortcut temporarily unavailable';
+      }
+    })();
+  </script>
 </body>
 </html>
