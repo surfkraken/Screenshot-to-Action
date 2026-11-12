@@ -72,8 +72,8 @@
         const response = await fetch('latest.json', { cache: 'no-store' });
         if (!response.ok) throw new Error('Release manifest unavailable');
         const release = await response.json();
-        if (!release.shortcut_filename) throw new Error('Shortcut path missing');
-        link.href = release.shortcut_filename;
+        if (!release.shortcut_file) throw new Error('Shortcut path missing');
+        link.href = release.shortcut_file;
         link.removeAttribute('aria-disabled');
         link.textContent = 'Get the latest shortcut';
       } catch (_) {
