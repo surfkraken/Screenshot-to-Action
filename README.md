@@ -8,8 +8,6 @@ Screenshot to Action turns a screenshot into useful next steps. Choose a photo o
 
 Visit [the opening page](index.html) to get the current shortcut. The download link is loaded from latest.json, so release details stay in one place.
 
-The shortcut is distributed for signing with your preferred tool before installing it. See the [test report](Screenshot-to-Action-Test-Report.md) for verification details and known limits.
-
 ## What it does
 
 - Extracts visible text, a summary, addresses, and contact details using Apple's Shortcuts Use Model action.
@@ -22,8 +20,6 @@ The first menu is kept intentionally simple: Choose Photo, Take a Photo, All Cap
 ## Requirements and verification
 
 Requires a compatible iPhone with Apple Intelligence enabled for image analysis. Internet access and Apple's model availability are required for analysis.
-
-The shortcut passed automated structural and modeled workflow checks. These checks do not execute Apple's Shortcuts runtime. Import and verify Apple Intelligence, Notes, Reminders, Calendar, Maps, Contacts, permissions, and performance on your device. The test report describes known limits.
 
 ## Files
 
