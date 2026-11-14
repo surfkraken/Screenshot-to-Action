@@ -1,8 +1,8 @@
 {
   "product": "Screenshot to Action",
-  "version": "3.0",
-  "build": 300,
-  "url": "https://www.icloud.com/shortcuts/3668891946a9480598ea9ada3f739894",
+  "version": "3.1",
+  "build": 301,
+  "url": "https://www.icloud.com/shortcuts/8186e01a531f4d27a8472b79f5307c70",
   "minimum_os": "iOS 27",
-  "release_notes": "Version 3, Build 300."
+  "release_notes": "Version 3.1, Build 301."
 }
