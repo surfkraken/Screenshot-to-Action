@@ -4,7 +4,7 @@ See it. Sort it. Save it.
 
 Screenshot to Action turns a screenshot into useful next steps. Choose a photo or take one, let Apple Intelligence analyze it, then save, search, or act on the details it finds.
 
-[Download Shortcut](https://www.icloud.com/shortcuts/02ef154515844aac82de367e0b6c04b2)
+[Download Shortcut](https://www.icloud.com/shortcuts/8186e01a531f4d27a8472b79f5307c70)
 
 ## What it does
 
